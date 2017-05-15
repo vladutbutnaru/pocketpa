@@ -1,0 +1,62 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Settings</ion-title>
+	</ion-navbar>
+</ion-header>
+<div class="background-pp settings-page">
+	<div class="settings-info">
+		<label class="settings-name">Clock</label>
+		<div class="clock-button white-button">
+			<div class="white-clock">12h</div>
+			<div class="green-clock">24h</div>
+		</div>
+	</div>
+	<div class="settings-info">
+		<p class="settings-name">Date format</p>
+		<div class="date-format-radio">
+			<ion-checkbox color="dark" checked="true"></ion-checkbox>
+			<label class="text-grey">DD - MM - YYYY</label>
+		</div>
+		<div class="date-format-radio">
+			<ion-checkbox color="dark" checked="true"></ion-checkbox>
+			<label class="text-grey">MM - DD - YYYY</label>
+		</div>
+	</div>
+	<div class="settings-info">
+		<p class="settings-name">Week Start Day</p>
+		<div class="date-format-radio">
+			<ion-checkbox color="dark" checked="true"></ion-checkbox>
+			<label class="text-grey">Monday</label>
+		</div>
+		<div class="date-format-radio">
+			<ion-checkbox color="dark" checked="true"></ion-checkbox>
+			<label class="text-grey">Sunday</label>
+		</div>
+	</div>
+	<div class="settings-info">
+		<p class="settings-name">Default date ranges</p>
+		<input type="text" class="input-pp" placeholder="Week">
+		<p class="settings-name text-green">Notifications</p>
+		<span class="settings-name">Appointment reminder</span><ion-toggle class="pull-right"></ion-toggle>
+		<p class="settings-subtitle-name text-grey">Set notification time before appointment</p>
+		<input type="text" class="input-pp" placeholder="Time before appointment">
+		<span class="settings-name">Attendence reminder</span><ion-toggle class="pull-right"></ion-toggle>
+		<p class="settings-subtitle-name text-grey">Set a reminder just before the end of every appointment to record your payment taken</p>
+		<input type="text" class="input-pp" placeholder="10 minutes">
+
+		<span class="settings-name reminder-settings text-green">SMS Reminder</span><ion-toggle class="pull-right"></ion-toggle>
+
+		<p class="settings-name">Select curency</p>
+		<input type="text" class="input-pp" placeholder="$">
+		<button class="green-button button-round-pp">Export appointments</button>
+	</div>
+</div>
+<ion-footer>
+	<ion-toolbar>
+		<button class="icon-button icon-next pull-left">Next</button>
+		<button class="icon-button icon-diary pull-left">Dairy</button>
+		<button ion-fab class="green"><ion-icon name="add"></ion-icon></button>
+		<button class="icon-button icon-more pull-right">More</button>
+		<button class="icon-button icon-income pull-right">Income</button>
+	</ion-toolbar>
+</ion-footer>

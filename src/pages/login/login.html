@@ -1,0 +1,47 @@
+<!-- <ion-content padding class="login-page-pp">
+
+  <ion-item>
+  	<img src="../../assets/images/PPlogo.png"/>
+  </ion-item>
+  <ion-item class="input-pp">
+    <ion-input type="text" placeholder="Username"></ion-input>
+  </ion-item>
+  <ion-item class="input-pp">
+    <ion-input type="text" placeholder="Password"></ion-input>
+  </ion-item>
+  <button ion-button color="secondary" round class="button-round-pp">Login</button>
+</ion-content> -->
+
+<div class="login-page background-pp">
+	<div class="logo-container">
+		<img class="logo-pp" src="../../assets/images/PPlogo.png"/>
+	</div>
+	<div class="login-step" *ngIf="isLogin">
+		<input ion-input type="text" id="loginUsername" [(ngModel)]="loginUsername" class="input-pp input-user" placeholder="Username"/>
+		<input ion-input type="password" id="loginPassword" [(ngModel)]="loginPassword" class="input-pp input-key" placeholder="Password"/>
+		<button ion-button id="loginButton" class="button-round-pp" color="secondary" round (click)="pushPage()">Login</button>
+		<p class="forgot-password">Forgot password?</p>
+		<p class="or-login">or <br> login with</p>
+		<button id="connect-fb" class="social-media" ion-fab big><img src="../../assets/images/facebook.png"/></button>
+		<button id="connect-g+" class="social-media" ion-fab big><img src="../../assets/images/g+.png"/></button>
+		<p class="dont-acc">Don't you have an account yet? <span class="forgot-password" (click)="switchToRegister()">Sign up now!</span></p>
+	</div>
+	<div class="login-step register-step" *ngIf="!isLogin">
+		<input ion-input type="text" id="username" id="registerEmail" class="input-pp input-email" placeholder="Email"/>
+		<input ion-input type="password" id="password" id="registerPassword1" class="input-pp input-key" placeholder="Password"/>
+		<input ion-input type="password" id="password" id="registerPassword2" class="input-pp input-key" placeholder="Confirm Password"/>
+		<button ion-button id="registerButton" class="button-round-pp" color="secondary" round (click)="registerTerms()">Register</button>
+		<p class="or-login">or <br> login with</p>
+		<button id="connect-fb" class="social-media" ion-fab big><img src="../../assets/images/facebook.png"/></button>
+		<button id="connect-g+" class="social-media" ion-fab big><img src="../../assets/images/g+.png"/></button>
+		<p class="dont-acc">Do you have an account ? <span class="forgot-password" (click)="switchToLogin()">Sign in now!</span></p>
+	</div>
+	<div class="agree-register" *ngIf="agreeTerms">
+		<div class="agree-modal">
+			<p class="text-grey">By Registering your account you agree<br> to be bound by <span class="text-green">Terms & Conditions</span><br> and <span class="text-green">Privacy Policy</span> of Pocket PA</p>
+			<button class="button-round-pp decline-terms" (click)="declineTerms()">Decline</button>
+			<button class="button-round-pp agree-terms">I Agree</button>
+		</div>
+	</div>
+	
+</div>

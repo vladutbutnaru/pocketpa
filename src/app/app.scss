@@ -1,0 +1,931 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url('../../assets/Font/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url('../../assets/Font/Roboto-BlackItalic.ttf');
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../../assets/Font/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url('../../assets/Font/Roboto-BoldItalic.ttf');
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url('../../assets/Font/Roboto-Italic.ttf');
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../../assets/Font/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url('../../assets/Font/Roboto-LightItalic.ttf');
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('../../assets/Font/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: Roboto-MediumItalic;
+    src: url('../../assets/Font/Roboto-MediumItalic.ttf');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../../assets/Font/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url('../../assets/Font/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url('../../assets/Font/Roboto-ThinItalic.ttf');
+}
+
+body, html {
+	width:100%;
+	height:100%;
+	font-family:Roboto-Regular;
+}
+.background-pp {
+    background: url(../assets/images/PPbg.jpg) repeat-x;
+    background-size: auto 100%;
+    width: 100%;
+    height: 100%;
+}
+.input-pp {
+	display: block;
+    padding: 10px 0;
+    text-indent: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Roboto-Light;
+}
+.toogle {
+	.toggle-checked {
+		background-color: #61da9b !important;
+		.toggle-inner {
+			background: #00a850 !important;
+		}
+	}
+}
+.toogle-md {
+	.toggle-checked {
+		background-color: #61da9b;
+		.toggle-inner {
+			background: #00a850;
+		}
+	}
+}
+.text-grey {
+	color: #999999;
+}
+.text-green {
+	color: #00a850;
+}
+.green-button {
+	background-color: #00a850;
+	color: #ffffff;
+}
+.white-button {
+	background-color: #ffffff;
+	color: #00a850;
+	border: 1px solid #00a850;
+}
+.orange-button {
+	background-color: #ffffff;
+	color: #ff6101;
+	border: 1px solid #ff6101;
+}
+
+.button-round-pp {
+    width: 100%;
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    padding: 12px 0;
+    border-radius: 50px;
+}
+.input-pp {
+	color: #999999;
+	border: 1px solid #c1c1c1;
+}
+.input-error {
+	border: 1px solid #ff6000;
+}
+.input-pp:focus {
+	border-color: #000000 !important;
+	color: #000000 !important;
+}
+.display-none-pp {
+	display: none;
+}
+.pull-left {
+	float:left;
+}
+.pull-right {
+	float:right;
+}
+.input-email {
+    background: url(../assets/images/icon_mail.png) no-repeat;
+    background-size: auto 45%;
+    background-position: 92% center;
+}
+.input-user {
+	background: url(../assets/images/icon_user.png) no-repeat;
+	background-size: auto 45%;
+    background-position: 92% center;
+}
+.input-key {
+	background: url(../assets/images/icon_key.png) no-repeat;
+	background-size: auto 50%;
+    background-position: 92% center;
+}
+.search {
+	margin-top: 70px;
+	padding: 0 20px;
+	margin-bottom: 10px;
+	.input-pp-search {
+		width: 100%;
+	}
+}
+.icon-next {
+	background: url(../assets/images/icon_next.png) no-repeat;
+}
+.icon-diary {
+	background: url(../assets/images/icon_diary.png) no-repeat;
+}
+.icon-income {
+	background: url(../assets/images/icon_income.png) no-repeat;
+}
+.icon-more {
+	background: url(../assets/images/icon_more.png) no-repeat;
+}
+.icon-search {
+	background: url(../assets/images/icon_more.png) no-repeat;
+}
+.checkbox-icon {
+	border-radius: 50% !important;
+}
+.checkbox-checked.checkbox-icon {
+    border-color: #00a850 !important;
+    border-radius: 50% !important;
+    padding: 2px;
+    background: #ffffff;
+    .checkbox-inner {
+        background-color: #00a850;
+	    display: block;
+	    width: 10px;
+	    height: 10px;
+	    transform: rotate(0deg);
+	    border-radius: 50%;
+	    position: static;
+	    margin: auto;	
+    }
+}
+.color-pink {
+	background-color: #fca19c;
+}
+.text-pink {
+	color: #fca19c;
+}
+.color-red {
+	background-color: #f89d98;
+}
+.color-orange {
+	background-color: #ffc87b;
+}
+.color-yellow {
+	backgrounc-color: #f1ec98;
+}
+.color-green {
+	background-color: #bbf483;
+}
+.color-light-green {
+	background-color: #85f6c0;
+}
+.color-light-blue {
+	background-color: #84f4f5;
+}
+.color-blue {
+	backgrounc-color: #98ccf3;
+}
+.color-purple {
+	backgrounc-color: #b589eb;
+}
+
+/* Toolbar */
+
+.ion-page {
+	.header {
+		box-shadow: 3px 3px 15px 15px rgba(240, 240, 240, 0.4);
+		.toolbar {
+			min-height: 50px;
+			.toolbar-title {
+				font-size: 2.5rem;
+			    font-family: Roboto-Regular;
+			    text-align: center;
+			}
+			.toolbar-background {
+				background: #ffffff;
+				border: none;
+			}
+		}
+	}
+	.footer {
+		box-shadow: 3px 3px 15px 15px rgba(240, 240, 240, 0.4);
+		background: #ffffff;
+		min-height: 70px;
+		.toolbar {
+			contain: initial;
+			overflow: visible;
+			height:100%;
+			.toolbar-content {
+				button {
+					display: inline-block;
+					background-color: #ffffff;
+					width: 16%;
+					margin: 0 2%;
+					height: 50px;
+					padding-top: 40px;
+					background-size: 50% auto;
+					text-align: center;
+					background-position: center 30%;
+					font-size: 12px;
+					color: #c6c6c6;
+				}
+				.fab {
+			        color: #ffffff;
+				    height: 50px;
+				    width: 50px;
+				    padding: 0;
+				    position: absolute;
+				    top: -25px;
+    				.icon {
+    					font-size: 35px;
+    				}
+				}
+				.fab.orange {
+					background-color: #ff6000;
+				    box-shadow: 0px 0px 20px 10px rgba(255, 96, 0, 0.4);
+				}
+				.fab.green {
+					background-color: #00a850;
+					box-shadow: 0px 0px 20px 10px rgba(0, 168, 80, 0.4);
+				}
+			}
+		}
+		.toolbar-background {
+			background: #ffffff;
+		}
+	}
+}
+
+/* Login page */
+
+.login-page {
+	text-align: center;
+	padding: 0 10%;
+	.agree-register {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(244, 244, 244, 0.8);
+		padding: 0 20px;
+		.agree-modal {
+			background-color: #ffffff;
+			width: 100%;
+			position: relative;
+			top: 30%;
+			padding: 20px 20px 75px 20px;
+			p {
+				font-size: 16px;
+				font-family: Roboto-Regular;
+				text-align: center;
+				line-height: 1.7;
+			}
+			button {
+				width: 48%;
+				padding:12px;
+			}
+			button.agree-terms {
+				float: right;
+				color: #ffffff;
+			}
+			button.decline-terms {
+				float:left;
+				color: #ff6000;
+				background-color: #ffffff;
+				border:1.5px solid #ff6000;
+			}
+		}
+	}
+	.logo-container {
+		height: 35%;
+		.logo-pp {
+	        height: 37%;
+		    margin-top: 25%;
+		    box-shadow: 0px 0px 60px 5px #e0e0e0;
+		    border-radius: 15px;
+		}
+	}
+	.login-step {
+		padding:0 20px;
+	}
+	.input-pp {
+        display: block;
+	    margin: 0 auto 20px auto;
+	    width: 100%;
+	    padding: 10px 15px;
+	    font-size: 16px;
+	    border-radius: 50px;
+	    font-family: Roboto-Light;
+	}
+	.button-round-pp {
+	    margin-top: 15px;
+		width: 100%;
+		font-size: 16px;
+		font-family: Roboto-Regular;
+		padding: 20.5px 35px;
+		border-radius: 50px;
+		background: #00a850;
+	}
+	.forgot-password {
+		color: #00a850;
+		font-size: 15px;
+		font-family: Roboto-Regular;
+	}
+	.or-login {
+		font-size: 15px;
+		color: #adadad;
+		font-family: Roboto-Regular;
+		margin: 20px 0;
+	}
+	.social-media {
+		display: inline-block;
+	    padding: 0;
+	    margin: 0 10px;
+	    width: 45px;
+	    height: 45px;
+	    overflow: hidden;
+	}
+	.dont-acc {
+		font-family: Roboto-Light;
+		font-size: 15px;
+		color: #010101;
+		position: absolute;
+		bottom: 0;
+		width: calc(100% - 20px);
+		text-align: center;
+		padding-right: 20px;
+	}
+}
+
+/* Profile page */
+.edit-profile, 
+.save-profile {
+    font-size: 18px;
+    font-family: Roboto-Light;
+    text-decoration: none;
+    color: #00a850;
+    margin-top: 5px;
+    width: 0px;
+    position: relative;
+    left: -30px;
+}
+.profile {
+	.profile-picture {
+	    text-align: center;
+	    background: url(../assets/images/background-pp-profile.png) no-repeat;
+    	background-size: 63%;
+	    background-position: center 35px;
+	    padding-bottom: 20px;
+		img {
+		    border-radius: 50%;
+		    margin-top: 70px;
+		    width: 30%;
+		}
+	}
+	.profile-info {
+		padding:0 20px;
+		.info {
+			border-bottom: 1px solid #e5e5e5;
+			height:45px;
+			p {
+		        margin: 14px 0;
+    			font-size: 13px;
+			}
+			.pull-left {
+				color: #999999;
+				font-family: Roboto-Light;
+			}
+		}
+	}
+	.profile-info.edit-info {
+		padding-bottom:30px;
+	    overflow: auto;
+	    max-height: 57vh;
+	}
+	.edit-info {
+		.input-pp {
+			width: 100%;
+			margin-bottom: 10px;
+			font-family: Roboto-Light;
+			font-size: 12px;
+		}
+		label {
+			font-size: 13px;
+			margin-bottom: 3px;
+			display: block;
+			font-family: Roboto-Regular;
+		}
+		.control-buttons {
+			margin-top: 20px;
+		}
+		button {
+			width:100%;
+			padding:12px 0;
+			text-align: center;
+		    border-radius: 20px;
+		    margin-bottom: 10px;
+		}
+	}
+}
+
+/* Add Invoice */
+.headline-invoice {
+	font-size: 12px;
+	margin-bottom: 5px;
+	padding:0 20px;
+}
+.invoice-create {
+	margin: 0 20px;
+    position: absolute;
+    width: calc( 100% - 40px );
+    bottom: 70px;
+    padding: 5px 0 45px 0;
+    border-top:1px solid #cccccc;
+    .total {
+	    font-size: 19px;
+	    font-family: Roboto-Bold;
+	    margin-top: 5px;
+    	span {
+    		color: #00a850;
+    	}
+    }
+}
+.invoice-box-list {
+    max-height: calc( 100% - 360px );
+    overflow: auto;
+}
+.invoice-box {
+    margin: 0 20px 10px 20px;
+    position: relative;
+	box-shadow: 0px 2px 7px 0.5px #c1c1c1;
+	.center {
+		position: absolute;
+    	margin-top: 10px;
+    	width:45%;
+    	.time {
+		    color: #ffffff;
+		    font-size: 45px;
+		    margin: 0;
+		    text-align: right;
+		    padding-right: 5px;
+    	}
+    	.date {
+		    margin: 0;
+		    font-size: 11px;
+		    text-align: right;
+		    padding-right: 9px;
+		    position: relative;
+		    top: 5px;
+		    color: #ffffff;
+		    font-family: Roboto-Thin;
+    	}
+	}
+	.left {
+		width: 33%;
+	}
+	.left, .center {
+	    padding-left: 20px;
+	    display: inline-block;
+    	.white-line {
+		    border: 2px solid #ffffff;
+		    margin-top: 20px;
+		    width: 40%;
+    	}
+    	.invoice-name {
+		    font-size: 20px;
+		    font-family: Roboto-Light;
+		    color: #ffffff;
+		    margin-top: 6px;
+		    margin-bottom: 0;
+    	}
+    	.invoice-client {
+		    margin: 2px;
+    		font-size: 12px;
+    	}
+	}
+	.right {
+	    width: 16%;
+	    text-align: center;
+	    padding: 35px 0;
+	    display: inline-block;
+	    float: right;
+	    .checkbox-mask {
+	    	width: 20px;
+		    margin: auto;
+		    background: #ffffff;
+		    border: 2px solid #656565;
+		    border-radius: 4px;
+		    input {
+		    	visiblity: hidden;
+		    }
+	    }
+	}
+	.invoice-info {
+	    padding: 5px 20px;
+	    margin-top: 10px;
+	    background: #ffffff;
+	    .price {
+			font-size: 11px;
+			font-family: Roboto-Bold;
+			color: #cbcaca;
+			padding: 5px 0 3px 23px;
+			background: url(../assets/images/icon_card.png) no-repeat;
+			background-size: 15px;
+			background-position: left center;
+			.price-value {
+				color: #525252;
+			}
+	    }
+	    .invoice-status {
+		    font-family: Roboto-Bold;
+		    color: #cbcaca;
+		    font-size: 10px;
+		    padding: 4px 0;
+		    position: relative;
+		    left: 29px;
+	    }
+	}
+}
+.invoice-dropdown {
+	margin-top:50px;
+    padding: 5px 20px 0px 20px;
+	.text {
+	    margin-bottom: 5px;
+	    font-size: 12px;
+	}
+	select {
+		width: 100%;
+		padding: 10px 5px;
+		font-size: 11px;
+		color: #999999;
+		> option {
+			padding: 10px 5px;
+			font-size: 11px;
+			color: #999999;
+		}
+	}
+}
+
+/* Clients page */
+.clients-page {
+	.search {
+		margin-top: 70px;
+		padding: 0 20px;
+		margin-bottom: 10px;
+		.input-pp-search {
+			width: 100%;
+		}
+	}
+	.clients-list {
+		p {
+			margin: 0;
+		}
+		.heading-letter {
+			background: #f0f0f0;
+			padding:5px 20px;
+		}
+		.client-box {
+			border-bottom: 1px solid #c1c1c1;
+
+		}
+		.client-image {
+			width:25%;
+			padding: 10px 10px;
+			display: inline-block;
+			img {
+				border-radius: 50%;
+			}
+		}
+		.client-info {
+			width: 74%;
+			position: absolute;
+			padding-top:10px;
+			display: inline-block;
+			.client-name {
+				font-size:20px;
+				margin-bottom: 3px;
+			}
+		}
+	}
+	.client-connect {
+		width: 70px;
+	    border-radius: 50%;
+	    height: 70px;
+	    border: none;
+	    margin: 15px 8px;
+	    box-shadow: 0px 0px 19px 1px #c1c1c1;
+	    img {
+	    	width: 50%;
+	    	margin:auto !important;
+	    	border-radius: 0;
+	    }
+	}
+	.profile-info {
+		padding:0;
+	    max-height: calc(100vh - 400px);
+    	overflow-y: auto;
+		.client-details-heading {
+		    padding: 15px 15px 15px 30px;
+		    padding-left: 12%;
+		    border-bottom: 1px solid #e5e5e5;
+			p {
+				margin: 0;
+				font-family: Roboto-Light;
+				font-size: 16px;
+				span {
+					font-family: Roboto-Regular;
+					font-size: 13px;
+				}
+				img {
+					width: 13px;
+				}
+			}
+		}
+		.client-appoinments {
+			background: url(../assets/images/icon_calendar_green.png) no-repeat;
+			background-size: 23px;
+			background-position: 5% center;
+			font-size:18px;
+		}
+		.client-payments {
+			background: url(../assets/images/icon_invoices.png) no-repeat;
+			background-size: 23px;
+			background-position: 5% center;
+			font-size:18px;
+		}
+		.client-invoices {
+			background: url(../assets/images/icon_income_green.png) no-repeat;
+			background-size: 23px;
+			background-position: 5% center;
+			font-size:18px;
+		}
+		.reminder {
+			padding:10px 20px;
+			.reminder-send {
+				font-family: Roboto-Light;
+				font-size: 16px;
+			}
+			.toggle-checked {
+				background-color: #61da9b;
+				.toggle-inner {
+					background: #00a850;
+				}
+			}
+		}
+		.info {
+			padding:0 20px;
+		}
+		.info-notes {
+			border: none;
+		}
+	}
+	.profile-picture {
+		img {
+			margin: 0 auto;
+	    	margin-top: 70px;
+	    	display:block;
+		}
+	}
+}
+
+/* Services Page */
+.services-page {
+	.search {
+		margin:50px 0 0 0;
+		padding: 15px 20px;
+	    background-color: #ffffff;
+	    z-index: 10;
+	    position: relative;
+	    border-top: 1px solid #e5e5e5;
+	    box-shadow: 1px 2px 5px 0px #e5e5e5;
+	}
+	.services-list {
+		.services-box {
+			background: url('../assets/images/services_box_pink.png') no-repeat;
+			background-size: auto 100%;
+			background-color: #ffffff;
+		    padding: 10px 20px;
+		    border-bottom: 1px solid #e5e5e5;
+		    > div {
+		    	display: inline-block;
+		    }
+		    .services-info {
+		    	width:75%;
+		    	.services-name {
+		    		font-family: Roboto-Regular;
+				    font-size: 20px;
+				    margin: 0;
+				    margin-bottom: 5px;
+		    	}
+		    	.services-ammount {
+	    		    font-size: 15px;
+    				margin: 0;
+		    	}
+		    }
+		    .services-time {
+		    	float: right;
+		    	img {
+				    max-height: 20px;
+				    margin-top: 14px;
+				    margin-left: 10px;
+		    	}
+		    }
+		}
+	}
+	.services-list-details {
+		.details-heading {
+			text-align: center;
+		    color: #ffffff;
+		    padding-top: 10px;
+		    margin-top: 50px;
+		    height: 125px;
+			.average-duration {
+			    font-size: 15px;
+			    margin: 5px 0 0 0;
+			    font-family: Roboto-Thin;
+			}
+			.details-duration {
+			    font-size: 38px;
+			    margin: 5px 0 0 0;
+			}
+			.details-price {
+			    width: 80px;
+			    height: 80px;
+			    background: #ffffff;
+			    border-radius: 50%;
+			    margin: auto;
+			    padding: 25px 0;
+			    font-size: 23px;
+			    box-shadow: 0px 0px 5px 0px #e5e5e5;
+			}
+		}
+		.details-info {
+			padding:50px 20px 0 20px;
+			font-size:16px;
+			.details-description {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+/* Taxes */
+.taxes-page {
+	margin-top: 50px;
+	padding: 20px;
+	.taxes-box {
+		background-color: #ffffff;
+		padding: 20px;
+	    margin-bottom: 20px;
+	    box-shadow: 0px 0px 10px 1px #e5e5e5;
+		> div {
+		    height: 60px;
+		}
+		label {
+			margin-bottom: 5px;
+			font-size:14px;
+		}
+		.input-pp {
+		    width: 100%;
+    		margin: 5px 0 20px 0;
+		}
+		button {
+			width:47%;
+			float:left;
+			margin-top: 20px;
+		}
+		.green-button {
+			float: right;
+		}
+		.toggle-checked {
+			background-color: #61da9b;
+			.toggle-inner {
+				background: #00a850;
+			}
+		}
+	}
+}
+
+/* Settings */
+.settings-page {
+	margin-top: 50px;
+	padding-bottom: 80px;
+	height: calc(100vh - 50px);
+	overflow-y: auto;
+	.clock-button {
+	    width: 120px;
+	    border-radius: 50px;
+	    border: 1px solid #00a850;
+	    overflow: hidden;
+		> div {
+			display: inline-block;
+		    width: 48.5%;
+		    padding: 12px;
+		    font-size: 18px;
+		}
+		.green-clock {
+			background-color: #00a850;
+			color: #ffffff;
+		}
+	}
+	.settings-info {
+		max-width: 100vw;
+    	padding: 10px 20px;
+		border-bottom: 1px solid #e5e5e5;
+		label {
+			display: inline-block;
+			font-size: 22px;
+			padding: 10px 0;
+		}
+		p, span.settings-name {
+			font-size: 18px;
+		}
+		.clock-button {
+			float: right;
+		}
+		.settings-name {
+			margin: 0;
+		}
+		.date-format-radio {
+			display: inline-block;
+			width: 48%;
+			label {
+				font-size:19px;			
+			}
+		}
+		input {
+			width: 100%;
+			margin: 5px 0 20px 0;
+		}
+		.text-green {
+			font-size: 20px;
+		}
+		.toggle-checked {
+			background-color: #61da9b;
+			.toggle-inner {
+				background: #00a850;
+			}
+		}
+		.settings-subtitle-name {
+			margin: 0;
+			display:block;
+		    font-size: 14px;
+    		margin-bottom: 5px;
+    		max-width: 80%;
+		}
+		.reminder-settings {
+			font-size: 20px;
+		}
+	}
+}
+
+.background-pp {
+	padding: 0;
+}

@@ -1,0 +1,71 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Clients</ion-title>
+	</ion-navbar>
+</ion-header>
+<div class="background-pp clients-page">
+	<div class="clients-list" *ngIf="clientsList">
+		<div class="search">
+			<input type="text" class="input-pp input-pp-search" placeholder="Serch clients">
+		</div>
+		<div class="heading-letter grey-text">A</div>
+		<div class="client-box">
+			<div class="client-image">
+				<img src="./assets/images/client_default_icon.png"> 
+			</div>
+			<div class="client-info">
+				<p class="client-name">Aaron Jones</p>
+				<p class="client-appointments text-grey">Aaron Jones</p>
+				<p class="client-payments text-grey">Aaron Jones</p>
+				<p class="client-invoices text-grey">Aaron Jones</p>
+			</div>
+		</div>
+	</div>
+	<div class="profile client-details" *ngIf="!clientsList" >
+		<div class="profile-picture">
+			<img src="../../assets/images/img_profile.png" alt="">
+			<button class="white-button client-connect"><img src="../../assets/images/icon_phone.png" alt=""></button>
+			<button class="white-button client-connect"><img src="../../assets/images/icon_message.png" alt=""></button>
+			<button class="white-button client-connect"><img src="../../assets/images/icon_email.png" alt=""></button>
+		</div>
+		<div class="profile-info">
+			<div class="client-details-heading client-appoinments">
+				<p>Appointments <span class="text-grey">(12)</span> <img class="pull-right arrow-right" src="./assets/images/arrow_right_green.png"></p>
+			</div>
+			<div class="client-details-heading client-payments">
+				<p>Payments <span class="text-grey">(9)</span> <img class="pull-right arrow-right" src="./assets/images/arrow_right_green.png"></p>
+			</div>
+			<div class="client-details-heading client-invoices">
+				<p>Invoices <span class="text-grey">(14)</span> <img class="pull-right arrow-right" src="./assets/images/arrow_right_green.png"></p>
+			</div>
+			<div class="reminder">
+				<span class="reminder-send">Send Reminder</span><ion-toggle class="pull-right"></ion-toggle>
+			</div>
+			<div class="info">
+				<p class="name pull-left">Phone number:</p>
+				<p class="value-phone pull-right">0000 000 000</p>
+			</div>
+			<div class="info">
+				<p class="name pull-left">Email:</p>
+				<p class="value-email pull-right">maxblack@gmail.com</p>
+			</div>
+			<div class="info">
+				<p class="name pull-left">Location:</p>
+				<p class="value-location pull-right">maxblack@gmail.com</p>
+			</div>
+			<div class="info info-notes">
+				<p class="name">Notes:</p>
+				<p class="value-notes">Cras rutrum, neque id hendrerit pretium, mi dolor tristique ligula, eget dignissim velit risus et odio. Morbi quis eleifend turpis. Sed laoreet facilisis sapien, vel tincidunt massa rutrum a. </p>
+			</div>
+		</div>
+	</div>
+</div>
+<ion-footer>
+	<ion-toolbar>
+		<button class="icon-button icon-next pull-left">Next</button>
+		<button class="icon-button icon-diary pull-left">Dairy</button>
+		<button ion-fab class="green"><ion-icon name="add"></ion-icon></button>
+		<button class="icon-button icon-more pull-right">More</button>
+		<button class="icon-button icon-income pull-right">Income</button>
+	</ion-toolbar>
+</ion-footer>
